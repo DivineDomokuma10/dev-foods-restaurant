@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  color: rgb(24, 223, 97);
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
