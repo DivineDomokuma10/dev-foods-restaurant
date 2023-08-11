@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "../components/NavBar";
-import Carousel from "../components/tools/Carousel";
 
 const Menu = () => {
   const people = [
@@ -24,12 +23,6 @@ const Menu = () => {
     <section>
       <NavBar />
       Menu
-      <Carousel arrs={people}>
-        <div key={arr.id} className="flex flex-col sapce-y-5">
-          <h1>{arr.name}</h1>
-          <p>{arr.desp}</p>
-        </div>
-      </Carousel>
     </section>
   );
 };
