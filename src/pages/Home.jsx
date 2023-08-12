@@ -14,7 +14,7 @@ const Home = () => {
             initial={{ x: -1000 }}
             animate={{ x: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="text-3xl font-light text-gray-200 sm:text-4xl sm:font-semibold md:text-5xl md:font-bold lg:font-light"
+            className="text-2xl font-light text-gray-200 sm:text-3xl sm:font-semibold md:text-4xl md:font-bold lg:font-light"
           >
             We serve
           </motion.p>
@@ -22,7 +22,7 @@ const Home = () => {
             initial={{ x: 1000 }}
             animate={{ x: 0 }}
             transition={{ duration: 0.5, delay: 0.9 }}
-            className="text-5xl font-bold text-center text-green-500 sm:text-6xl"
+            className="text-4xl font-bold font-serif text-center text-green-500 sm:text-6xl"
           >
             BEST QUALITY FOOD
           </motion.h1>

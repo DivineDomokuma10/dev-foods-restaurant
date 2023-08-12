@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
 import HeroSection from "../components/HeroSection";
+import Carousel from "../components/tools/Carousel";
 
 const About = () => {
   const navigator = useNavigate();
@@ -23,9 +24,9 @@ const About = () => {
             initial={{ x: 1000 }}
             animate={{ x: 0 }}
             transition={{ duration: 0.5, delay: 0.9 }}
-            className="text-5xl font-bold text-center text-green-500 leading-[50px] sm:text-6xl sm:px-20"
+            className="text-5xl font-bold font-serif text-center text-green-500 leading-[50px] sm:text-6xl sm:px-20"
           >
-            MORE ABOUT OUR US
+            MORE ABOUT US
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -40,13 +41,13 @@ const About = () => {
         </div>
       </HeroSection>
 
-      <article className="w-full h-[100vh] flex flex-col items-center bg-gray-200 py-7 space-y-10 md:space-y-20">
-        <h1 className="text-center text-4xl text-green-500 font-serif font-medium sm:text-5xl md:text-6xl">
+      <article className="w-full h-[90vh] flex flex-col items-center bg-gray-300 justify-center space-y-10 md:py-7 md:h-[100vh] md:space-y-20">
+        <h1 className="text-center text-4xl text-green-500 font-serif font-medium sm:text-5xl">
           OUR STORY
         </h1>
         <div className="flex flex-col space-y-10 md:flex-row md:space-y-0">
           <p className="leading-6 text-center text-sm px-5 sm:text-base sm:leading-8 md:leading-10 md:px-10 md:text-lg">
-            <span className="font-serif text-lg font-semibold text-green-600 sm:text-xl md:text-2xl">
+            <span className=" text-lg font-semibold text-green-600 sm:text-xl md:text-2xl">
               DEV FOODS
             </span>{" "}
             dolor sit amet consectetur adipisicing elit. Voluptas ipsam facere
@@ -82,6 +83,13 @@ const About = () => {
           </button>
         </div>
       </article>
+
+      <div className="w-full h-[80vh] flex flex-col space-y-5 bg-black bg-opacity-95 py-5">
+        <h1 className="text-center text-4xl text-green-500 font-serif font-medium sm:text-5xl">
+          CLIENTS TESTEMONIES
+        </h1>
+      </div>
+      <Carousel />
     </section>
   );
 };
