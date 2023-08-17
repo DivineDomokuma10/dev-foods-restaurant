@@ -11,7 +11,7 @@ const NavBar = () => {
     { id: 4, path: "/order", text: "Order", active: "active" },
     { id: 5, path: "/contact", text: "Contact Us", active: "active" },
   ];
-  const { showSideNav, toggleSideNav } = useContext(AppContext);
+  const { toggleSideNav } = useContext(AppContext);
 
   return (
     <header className="w-full p-4 flex items-center justify-between bg-transparent">

@@ -10,7 +10,7 @@ function App() {
 
   return (
     <AppContext.Provider value={{ showSideNav, toggleSideNav }}>
-      <main className="max-w-[100vw] flex flex-col overflow-hidden">
+      <main className="max-w-[100vw] flex flex-col overflow-y-auto overflow-x-hidden">
         {showSideNav && <SideBar />}
         <Outlet />
       </main>

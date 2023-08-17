@@ -4,14 +4,22 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Carousel = ({ children }) => {
   const settings = {
-    dots: true,
+    dots: false,
     speed: 600,
     autoplay: true,
     infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    initialSlide: 0,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     cssEase: "linear",
     autoplaySpeed: 2000,
+    responsive: [
+      { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+      {
+        breakpoint: 900,
+        settings: { slidesToShow: 2, slidesToScroll: 2 },
+      },
+    ],
   };
   return <Slider {...settings}>{children}</Slider>;
 };

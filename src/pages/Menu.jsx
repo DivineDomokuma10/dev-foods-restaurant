@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "../components/NavBar";
-import Carousel from "../components/tools/Carousel";
 
 const Menu = () => {
   const people = [
@@ -24,7 +23,6 @@ const Menu = () => {
     <section>
       <NavBar />
       Menu
-      <Carousel items={people} />
     </section>
   );
 };
