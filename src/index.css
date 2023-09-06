@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.active {
-  color: rgb(24, 223, 97);
+html {
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
