@@ -13,7 +13,7 @@ const NavBar = () => {
   const { toggleSideNav } = useContext(AppContext);
 
   return (
-    <header className="w-full p-2 flex items-center justify-between bg-transparent md:p-0 md:px-2">
+    <header className="w-full fixed top-0 left-0 z-50 p-2 flex bg-gray-700 bg-opacity-30 backdrop-blur-md backdrop-fliter items-center justify-between bg-transparent md:p-0 md:px-2">
       <h1 className="text-2xl text-gray-300 font-light md:text-3xl">
         <span className="font-bold  text-green-500 text-2xl md:text-4xl">
           Dev
